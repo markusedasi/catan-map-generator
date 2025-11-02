@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Catan Board Generator</title>
 </head>
 <body>
     <h1>Hello World!</h1>
     <section>
-        <!-- MAP -->
+        {% for row in board %}
+            <div>
+                {% for tile in row %}
+                    {{ tile.tile }}({{ tile.number or "-" }})
+                {% endfor %}
+            </div>
+        {% endfor %}
     </section>
     <section>
         <!-- BUTTONS -->
