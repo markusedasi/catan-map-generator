@@ -5,15 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    tile_set = generate_board()
-    structured_board = structure_board(tile_set)
-    return render_template("index.html", board=structured_board)
+    board = structure_board(generate_board())
+    return render_template("index.html", board=board)
 
 @app.route('/api/shuffle')
 def shuffle():
-    tile_set = generate_board()
-    structured_board = structure_board(tile_set)
-    return jsonify(structured_board)
+    board = structure_board(generate_board())
+    return jsonify(board)
 
 if __name__ == '__main__':
     app.run(debug=True)
