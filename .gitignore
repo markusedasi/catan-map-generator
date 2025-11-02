@@ -1,0 +1,72 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+env.bak/
+
+# Flask instance folder (runtime configs, uploads, etc.)
+instance/
+*.db
+*.sqlite3
+
+# Local configuration files
+*.env
+.env.*
+config.py
+config_local.py
+
+# Flask cache / logs
+*.log
+.cache/
+*.pid
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# Coverage / test output
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+
+# Linux
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
